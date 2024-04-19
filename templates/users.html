@@ -1,0 +1,24 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 align="center">{{n}}  пользователей!</h1>
+
+        <table border=5 align="center">
+                <tr>
+                    <th>Имя</th>
+                    <th>Возраст</th>
+                    <th>Город</th>
+                </tr>
+
+                {% for i in users%}
+                    <tr>
+                        <td>{{users[i]['name']}}</td>
+                        <td>{{users[i]['age']}}</td>
+                        <td>{{users[i]['adress']}}</td>
+                    </tr>
+                {%endfor%}
+          
+        </table>
+    </body>
+</html>
